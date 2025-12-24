@@ -2,6 +2,8 @@ import "./globals.css";
 import { Inter, Anton } from "next/font/google";
 import { ReactLenis } from "@/utils/lenis";
 import "lenis/dist/lenis.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,8 +26,14 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <ReactLenis root>
-        <body className={`font-sans antialiased`}>
-          <main>{children}</main>
+        <body className={`flex min-h-screen flex-col font-sans antialiased`}>
+          <header>
+            <Navbar />
+          </header>
+          <main className="grow">{children}</main>
+          <footer>
+            <Footer />
+          </footer>
         </body>
       </ReactLenis>
     </html>
