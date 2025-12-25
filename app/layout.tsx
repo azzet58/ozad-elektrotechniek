@@ -30,7 +30,9 @@ export default function RootLayout({
           <header>
             <Navbar />
           </header>
-          <main className="grow">{children}</main>
+          <main className="mx-auto w-full max-w-[1700px] grow px-8">
+            {children}
+          </main>
           <footer>
             <Footer />
           </footer>

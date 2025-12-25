@@ -1,4 +1,3 @@
-import { Container } from "./ui/container";
 import Link from "next/link";
 import { FaLinkedin, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
@@ -41,7 +40,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <div className="w-full bg-neutral-900 pt-48">
-      <Container>
+      <div className="mx-auto max-w-[1700px] px-4">
         <div className="flex justify-between gap-12 text-lg font-medium">
           <div className="space-y-8 text-neutral-300">
             <ul className="text-white">
@@ -145,7 +144,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

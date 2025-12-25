@@ -4,10 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
-import { title } from "process";
-import { Container } from "./ui/container";
 import { usePathname } from "next/navigation";
-import { link } from "fs";
 
 const navLinks = [
   {
@@ -24,7 +21,7 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="absolute top-0 z-50 h-24 w-full">
-      <Container className="h-full">
+      <div className="mx-auto h-full max-w-[1700px] px-4">
         <div className="flex h-full items-center justify-between">
           <Link href="/">
             <Image
@@ -68,7 +65,7 @@ export default function Navbar() {
             })}
           </ul>
         </div>
-      </Container>
+      </div>
     </nav>
   );
 }
