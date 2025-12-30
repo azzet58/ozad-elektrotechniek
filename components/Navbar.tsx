@@ -20,8 +20,8 @@ const navLinks = [
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <nav className="absolute top-0 z-50 h-24 w-full">
-      <div className="mx-auto h-full max-w-[1700px] px-4">
+    <nav className="absolute top-0 z-20 h-24 w-full">
+      <div className="mx-auto h-full max-w-[1700px] px-8">
         <div className="flex h-full items-center justify-between">
           <Link href="/">
             <Image
@@ -29,6 +29,7 @@ export default function Navbar() {
               width={150}
               height={150}
               alt="Özad Elektrotechniek Logo"
+              priority
             />
           </Link>
           <ul className="flex items-center gap-8 text-xl font-medium">

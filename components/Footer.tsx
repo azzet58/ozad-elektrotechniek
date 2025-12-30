@@ -39,8 +39,8 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <div className="w-full bg-neutral-900 pt-48">
-      <div className="mx-auto max-w-[1700px] px-4">
+    <div className="bg-neutral-900 pt-48">
+      <div className="mx-auto max-w-[1700px] px-8">
         <div className="flex justify-between gap-12 text-lg font-medium">
           <div className="space-y-8 text-neutral-300">
             <ul className="text-white">
@@ -114,6 +114,7 @@ export default function Footer() {
               width={175}
               height={175}
               alt="Özad Elektrotechniek Logo"
+              priority
             />
           </Link>
           <ul className="flex items-center gap-8 grayscale">
@@ -124,6 +125,7 @@ export default function Footer() {
                   width={100}
                   height={100}
                   alt={item.alt}
+                  priority
                 />
               </li>
             ))}
