@@ -53,7 +53,7 @@ export default function Contact() {
             </Field>
             <Button
               type="submit"
-              className="self-start p-6 rounded-full bg-blue-600 text-lg font-bold hover:bg-black"
+              className="self-start rounded-full bg-blue-600 p-6 text-lg font-bold hover:bg-black"
             >
               Versturen
             </Button>

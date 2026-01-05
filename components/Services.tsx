@@ -28,7 +28,9 @@ export default function About() {
               asChild
               className="rounded-full bg-white p-6 text-lg font-bold text-black hover:bg-neutral-200"
             >
-              <Link href="/services">Bekijk onze vacatures <ArrowRight /></Link>
+              <Link href="/services">
+                Bekijk onze vacatures <ArrowRight />
+              </Link>
             </Button>
           </div>
           <div className="absolute top-12 right-0 h-9/10 w-1/2 rounded-md bg-blue-600"></div>

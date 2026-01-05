@@ -10,7 +10,7 @@ const navLinks = [
   {
     title: "Diensten",
     href: "/services",
-    hasDropdown: true,
+    hasDropdown: false,
   },
   { title: "Projecten", href: "/projects" },
   { title: "Over ons", href: "/about" },
