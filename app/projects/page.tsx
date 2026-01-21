@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import { projects } from "@/data/projects";
+import { Badge } from "@/components/ui/badge";
 
 export default function Projects() {
   return (
@@ -14,7 +15,7 @@ export default function Projects() {
             <article key={project.href}>
               <Link href={project.href}>
                 <div className="relative w-full overflow-hidden rounded-md">
-                  <AspectRatio ratio={16 / 9}>
+                  <AspectRatio ratio={16 / 9} className="relative p-4">
                     <Image
                       src={project.image}
                       fill
@@ -22,6 +23,13 @@ export default function Projects() {
                       className="object-cover"
                       priority
                     />
+                    {project.status && (
+                      <div className="absolute">
+                        <Badge className="bg-blue-600 p-2">
+                          {project.status}
+                        </Badge>
+                      </div>
+                    )}
                   </AspectRatio>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
                   <div className="absolute bottom-0 space-y-2 p-8">
@@ -29,12 +37,17 @@ export default function Projects() {
                       {project.title}
                     </h2>
                     <ul className="flex items-end gap-4">
-                      <li className="text-5xl text-neutral-400">
-                        {project.location}
-                      </li>
-                      <li className="text-3xl text-neutral-400">
-                        <span className="font-">{project.homes}</span> Woningen
-                      </li>
+                      {project.location && (
+                        <li className="text-5xl text-neutral-400">
+                          {project.location}
+                        </li>
+                      )}
+                      {project.homes && (
+                        <li className="text-3xl text-neutral-400">
+                          <span className="font-bold">{project.homes}</span>{" "}
+                          Woningen
+                        </li>
+                      )}
                     </ul>
                   </div>
                 </div>
