@@ -1,10 +1,32 @@
+"use client";
+
 import Link from "next/link";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { usePathname } from "next/navigation";
 
 export default function NotFound() {
+  const pathname = usePathname();
   return (
     <div className="py-36">
       <div className="mx-auto max-w-[1700px] px-8">
-        <p className="mb-12">Breadcrumb</p>
+        <Breadcrumb className="mb-6">
+          <BreadcrumbList className="text-md">
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>{pathname.slice(1)}</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
         <h1 className="font-heading mb-36 px-12 text-8xl">
           Pagina niet gevonden
         </h1>

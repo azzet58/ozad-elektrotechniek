@@ -3,12 +3,30 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FaWhatsapp, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 export default function Services() {
   return (
     <div className="py-36">
       <div className="mx-auto max-w-[1700px] px-8">
-        <p className="mb-12">Breadcrumb</p>
+        <Breadcrumb className="mb-6">
+          <BreadcrumbList className="text-md">
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Diensten</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
         <h1 className="font-heading mb-36 text-8xl">
           Sluit je aan bij de Özad familie
         </h1>

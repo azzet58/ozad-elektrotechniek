@@ -3,12 +3,30 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import { projects } from "@/data/projects";
 import { Badge } from "@/components/ui/badge";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 export default function Projects() {
   return (
     <div className="py-36">
       <div className="mx-auto max-w-[1700px] px-8">
-        <p className="mb-12">Breadcrumb</p>
+        <Breadcrumb className="mb-6">
+          <BreadcrumbList className="text-md">
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Projecten</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
         <h1 className="font-heading mb-36 text-8xl">Projecten</h1>
         <div className="flex flex-col gap-4 overflow-hidden">
           {projects.map((project) => (

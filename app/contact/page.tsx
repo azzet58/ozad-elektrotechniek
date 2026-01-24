@@ -10,12 +10,30 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 export default function Contact() {
   return (
     <div className="pt-36">
       <div className="mx-auto max-w-[1700px] px-8">
-        <p className="mb-12">Breadcrumb</p>
+        <Breadcrumb className="mb-6">
+          <BreadcrumbList className="text-md">
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Contact</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
         <h1 className="font-heading mb-24 text-8xl">Neem contact op</h1>
         <div className="mb-24 max-w-3xl">
           <p className="text-3xl font-medium text-neutral-500">

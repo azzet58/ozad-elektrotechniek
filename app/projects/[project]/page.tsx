@@ -3,6 +3,14 @@ import Image from "next/image";
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 export default async function Project({
   params,
@@ -17,7 +25,21 @@ export default async function Project({
   return (
     <div className="py-36">
       <div className="mx-auto max-w-[1700px] px-8">
-        <p className="mb-12">Breadcrumb</p>
+        <Breadcrumb className="mb-6">
+          <BreadcrumbList className="text-md">
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/projects">Projecten</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>{project.title}</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
         <h1 className="font-heading mb-24 text-7xl text-black">
           {project.title}
         </h1>
