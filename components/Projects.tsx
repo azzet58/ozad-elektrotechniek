@@ -33,18 +33,19 @@ export default function Projects() {
                 </AspectRatio>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
                 <div className="absolute bottom-0 space-y-2 p-8">
-                  <h2 className="text-6xl font-medium text-white">
+                  <h2 className="text-5xl font-medium text-white">
                     {project.title}
                   </h2>
                   <ul className="flex items-end gap-4">
                     {project.location && (
-                      <li className="text-5xl text-neutral-400">
+                      <li className="text-4xl text-neutral-400">
                         {project.location}
                       </li>
                     )}
                     {project.homes && (
                       <li className="text-3xl text-neutral-400">
-                        <span>{project.homes + " " + "Woningen"}</span>
+                        <span className="font-bold">{project.homes}</span>{" "}
+                        <span className="font-semibold">Woningen</span>
                       </li>
                     )}
                   </ul>

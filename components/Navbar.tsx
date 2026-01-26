@@ -5,6 +5,7 @@ import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const navLinks = [
   {
@@ -19,6 +20,38 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const checkNavTheme = () => {
+      const navbar = document.querySelector("nav");
+      if (!navbar) return;
+
+      const navRect = navbar.getBoundingClientRect();
+      const checkPoint = navRect.top + navRect.height / 2;
+
+      const sections = document.querySelectorAll("[data-nav-theme]");
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+
+        if (rect.top <= checkPoint && rect.bottom >= checkPoint) {
+          const theme = section.getAttribute("data-nav-theme");
+          setIsDark(theme === "dark");
+        }
+      });
+    };
+
+    checkNavTheme();
+    window.addEventListener("scroll", checkNavTheme);
+    window.addEventListener("resize", checkNavTheme);
+
+    return () => {
+      window.removeEventListener("scroll", checkNavTheme);
+      window.removeEventListener("resize", checkNavTheme);
+    };
+  }, [pathname]);
+
   return (
     <nav className="absolute top-0 z-20 h-24 w-full">
       <div className="mx-auto h-full max-w-[1700px] px-8">
@@ -30,6 +63,7 @@ export default function Navbar() {
               height={150}
               alt="Özad Elektrotechniek Logo"
               priority
+              className={isDark ? "brightness-0 invert" : ""}
             />
           </Link>
           <ul className="flex items-center gap-8 text-xl font-medium">
@@ -47,19 +81,19 @@ export default function Navbar() {
                       <Link href={item.href}>{item.title}</Link>
                     </Button>
                   ) : (
-                    <>
-                      <Link
-                        href={item.href}
-                        className={
-                          isActive
-                            ? "flex items-center gap-1 text-blue-600"
-                            : "flex items-center gap-1 transition-colors hover:text-blue-600"
-                        }
-                      >
-                        {item.title}
-                        {item.hasDropdown && <ChevronDown />}
-                      </Link>
-                    </>
+                    <Link
+                      href={item.href}
+                      className={`flex items-center gap-1 transition-colors ${
+                        isActive
+                          ? "text-blue-600"
+                          : isDark
+                            ? "text-white hover:text-blue-600"
+                            : "text-black hover:text-blue-600"
+                      }`}
+                    >
+                      {item.title}
+                      {item.hasDropdown && <ChevronDown />}
+                    </Link>
                   )}
                 </li>
               );

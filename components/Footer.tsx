@@ -2,15 +2,9 @@ import Link from "next/link";
 import { FaLinkedin, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 
-const servicesLinks = [
-  { title: "Elektromonteur", href: "/services/elektromonteur" },
-];
+const servicesLinks = [{ title: "Alle diensten", href: "/services" }];
 
-const projectsLinks = [
-  { title: "Alle projecten", href: "/projects" },
-  { title: "In uitvoering", href: "/projects?status=active" },
-  { title: "Opgeleverd", href: "/projects?status=realized" },
-];
+const projectsLinks = [{ title: "Alle projecten", href: "/projects" }];
 
 const companyLinks = [
   { title: "Over ons", href: "/about" },

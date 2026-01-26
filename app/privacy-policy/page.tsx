@@ -10,7 +10,7 @@ import {
 
 export default function PrivacyPolicy() {
   return (
-    <div className="py-36">
+    <div data-nav-theme="light" className="py-36">
       <div className="mx-auto max-w-[1700px] px-8">
         <Breadcrumb className="mb-6">
           <BreadcrumbList className="text-md">
@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="font-heading mb-36 text-8xl">Privacyverklaring</h1>
+        <h1 className="font-heading mb-36 text-7xl">Privacyverklaring</h1>
         <div className="mx-auto max-w-4xl space-y-24 text-2xl font-medium text-neutral-500">
           <section className="space-y-8">
             <p>

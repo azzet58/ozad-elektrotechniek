@@ -21,7 +21,7 @@ import {
 
 export default function Contact() {
   return (
-    <div className="pt-36">
+    <div data-nav-theme="light" className="pt-36">
       <div className="mx-auto max-w-[1700px] px-8">
         <Breadcrumb className="mb-6">
           <BreadcrumbList className="text-md">
@@ -34,9 +34,9 @@ export default function Contact() {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="font-heading mb-24 text-8xl">Neem contact op</h1>
+        <h1 className="font-heading mb-24 text-7xl">Neem contact op</h1>
         <div className="mb-24 max-w-3xl">
-          <p className="text-3xl font-medium text-neutral-500">
+          <p className="text-2xl font-medium text-neutral-500">
             Heeft u vragen of wilt u meer informatie? Neem dan gerust contact
             met ons op via het contactformulier hieronder of via WhatsApp.
           </p>
@@ -45,26 +45,26 @@ export default function Contact() {
           <FieldGroup>
             <div className="grid grid-cols-2 gap-8">
               <Field>
-                <FieldLabel htmlFor="name" className="text-2xl">
+                <FieldLabel htmlFor="name" className="text-xl">
                   Naam
                 </FieldLabel>
                 <Input type="text" className="h-16 !text-2xl" />
               </Field>
               <Field>
-                <FieldLabel htmlFor="phone" className="text-2xl">
+                <FieldLabel htmlFor="phone" className="text-xl">
                   Telefoonnummer
                 </FieldLabel>
                 <Input type="tel" className="h-16 !text-2xl" />
               </Field>
             </div>
             <Field>
-              <FieldLabel htmlFor="email" className="text-2xl">
+              <FieldLabel htmlFor="email" className="text-xl">
                 E-mailadres
               </FieldLabel>
               <Input type="email" className="h-16 !text-2xl" />
             </Field>
             <Field>
-              <FieldLabel htmlFor="message" className="text-2xl">
+              <FieldLabel htmlFor="message" className="text-xl">
                 Bericht
               </FieldLabel>
               <Textarea className="h-64 !text-2xl" />

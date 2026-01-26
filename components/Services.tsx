@@ -24,11 +24,8 @@ export default function About() {
             <h2 className="text-7xl leading-tight font-bold text-white">
               Sluit jij je aan bij Özad familie?
             </h2>
-            <Button
-              asChild
-              className="rounded-full bg-white p-6 text-lg font-bold text-black hover:bg-neutral-200"
-            >
-              <Link href="/services">
+            <Button className="rounded-full bg-white p-6 text-lg font-bold text-black hover:bg-neutral-200">
+              <Link href="/services" className="flex items-center gap-2">
                 Bekijk onze vacatures <ArrowRight />
               </Link>
             </Button>

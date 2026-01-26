@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section
+      data-nav-theme="dark"
+      className="relative h-screen w-full overflow-hidden"
+    >
       <div className="absolute inset-0">
         <Image
           src="/images/hero/hero-banner.webp"

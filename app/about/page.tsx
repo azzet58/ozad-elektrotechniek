@@ -11,7 +11,7 @@ import {
 
 export default function About() {
   return (
-    <div className="py-36">
+    <div data-nav-theme="dark" className="bg-black py-36">
       <div className="mx-auto max-w-[1700px] px-8">
         <Breadcrumb className="mb-6">
           <BreadcrumbList className="text-md">
@@ -20,16 +20,16 @@ export default function About() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Over ons</BreadcrumbPage>
+              <BreadcrumbPage className="text-white">Over ons</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="font-heading mb-36 text-8xl">
+        <h1 className="font-heading mb-36 text-7xl text-white">
           Maak kennis met Özad Elektrotechniek
         </h1>
         <div className="mx-auto mb-36 max-w-4xl space-y-24 text-2xl font-medium text-neutral-500">
           <section className="space-y-8">
-            <h2 className="text-4xl font-bold text-black">
+            <h2 className="text-4xl font-bold text-white">
               Focus op hoogwaardige diensten
             </h2>
             <p>
@@ -45,7 +45,7 @@ export default function About() {
             </p>
           </section>
           <section className="space-y-8">
-            <h2 className="text-4xl font-bold text-black">
+            <h2 className="text-4xl font-bold text-white">
               Ervaring die spreekt
             </h2>
             <p>

@@ -23,7 +23,7 @@ export default async function Project({
     notFound();
   }
   return (
-    <div className="py-36">
+    <div data-nav-theme="light" className="py-36">
       <div className="mx-auto max-w-[1700px] px-8">
         <Breadcrumb className="mb-6">
           <BreadcrumbList className="text-md">
