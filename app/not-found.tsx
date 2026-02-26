@@ -14,10 +14,10 @@ import { usePathname } from "next/navigation";
 export default function NotFound() {
   const pathname = usePathname();
   return (
-    <div data-nav-theme="light" className="py-36">
-      <div className="mx-auto max-w-[1700px] px-8">
-        <Breadcrumb className="mb-6">
-          <BreadcrumbList className="text-md">
+    <div data-nav-theme="light" className="py-24 lg:py-36">
+      <div className="mx-auto max-w-[1700px] px-4 md:px-8">
+        <Breadcrumb className="mb-4 lg:mb-6">
+          <BreadcrumbList className="text-xs lg:text-base">
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Home</BreadcrumbLink>
             </BreadcrumbItem>
@@ -27,8 +27,10 @@ export default function NotFound() {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="font-heading mb-36 text-7xl">Pagina niet gevonden</h1>
-        <div className="mx-auto max-w-4xl space-y-8 text-2xl font-medium text-neutral-500">
+        <h1 className="font-heading mb-12 text-4xl md:mb-24 md:text-5xl lg:mb-36 lg:text-7xl">
+          Pagina niet gevonden
+        </h1>
+        <div className="mx-auto max-w-4xl space-y-4 font-medium text-neutral-500 md:px-12 lg:space-y-8 lg:px-0 lg:text-2xl">
           <p>Helaas, de pagina die u zocht is niet gevonden of beschikbaar.</p>
           <ul className="list-inside list-disc">
             <p>Ga direct naar:</p>

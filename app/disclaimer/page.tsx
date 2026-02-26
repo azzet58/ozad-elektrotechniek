@@ -10,10 +10,10 @@ import {
 
 export default function Disclaimer() {
   return (
-    <div data-nav-theme="light" className="py-36">
-      <div className="mx-auto max-w-[1700px] px-8">
-        <Breadcrumb className="mb-6">
-          <BreadcrumbList className="text-md">
+    <div data-nav-theme="light" className="py-24 lg:py-36">
+      <div className="mx-auto max-w-[1700px] px-4 md:px-8">
+        <Breadcrumb className="mb-4 lg:mb-6">
+          <BreadcrumbList className="text-xs lg:text-base">
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Home</BreadcrumbLink>
             </BreadcrumbItem>
@@ -23,8 +23,10 @@ export default function Disclaimer() {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="font-heading mb-36 text-7xl">Disclaimer</h1>
-        <div className="mx-auto max-w-4xl space-y-24 text-2xl font-medium text-neutral-500">
+        <h1 className="font-heading mb-12 text-4xl md:mb-24 md:text-5xl lg:mb-36 lg:text-7xl">
+          Disclaimer
+        </h1>
+        <div className="mx-auto max-w-4xl space-y-12 font-medium text-neutral-500 md:px-12 lg:space-y-24 lg:px-0 lg:text-2xl">
           <section>
             <p>
               Op deze pagina vindt u de disclaimer van{" "}
@@ -39,8 +41,8 @@ export default function Disclaimer() {
               de informatie op onze website aan u aanbieden.
             </p>
           </section>
-          <section className="space-y-8">
-            <h2 className="text-4xl font-bold text-black">
+          <section className="space-y-4 lg:space-y-8">
+            <h2 className="text-xl font-bold text-black md:text-2xl lg:text-4xl">
               Intellectueel eigendom
             </h2>
             <p>
@@ -56,8 +58,8 @@ export default function Disclaimer() {
               intellectueel eigendom berust bij Özad Elektrotechniek B.V..
             </p>
           </section>
-          <section className="space-y-8">
-            <h2 className="text-4xl font-bold text-black">
+          <section className="space-y-4 lg:space-y-8">
+            <h2 className="text-xl font-bold text-black md:text-2xl lg:text-4xl">
               Geen garantie op juistheid
             </h2>
             <p>
@@ -85,8 +87,10 @@ export default function Disclaimer() {
               hyperlinks verwijzen.
             </p>
           </section>
-          <section className="space-y-8">
-            <h2 className="text-4xl font-bold text-black">Wijzigingen</h2>
+          <section className="space-y-4 lg:space-y-8">
+            <h2 className="text-xl font-bold text-black md:text-2xl lg:text-4xl">
+              Wijzigingen
+            </h2>
             <p>
               Mocht deze disclaimer wijzigen, dan vindt u de meest recente
               versie van de disclaimer van{" "}

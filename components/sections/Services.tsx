@@ -1,0 +1,42 @@
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import Image from "next/image";
+import { Button } from "../ui/button";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+export default function About() {
+  return (
+    <section className="relative py-12 md:py-24 lg:py-72">
+      <div className="mx-auto max-w-[1700px] px-4 lg:px-8">
+        <div className="grid md:grid-cols-2 md:gap-36 lg:gap-80">
+          <div>
+            <div className="absolute top-12 right-4 left-4 h-2/5 w-9/10 md:top-24 md:right-8 md:left-8 md:h-3/4 md:w-1/2 lg:top-36 lg:left-24 lg:h-3/4 lg:w-1/2">
+              <Image
+                src="/images/services/uitnodiging-ozad-elektrotechniek.webp"
+                fill
+                alt="Over Özad Elektrotechniek"
+                className="rounded-md object-cover"
+                priority
+              />
+            </div>
+          </div>
+          <div className="z-10 space-y-12 md:space-y-36 lg:space-y-64 lg:py-0">
+            <h2 className="pt-42 text-3xl leading-tight font-bold text-white md:pt-12 md:text-4xl lg:pt-0 lg:text-7xl">
+              Sluit jij je aan bij Özad familie?
+            </h2>
+            <Button className="rounded-full bg-white p-4 text-xs font-bold text-black hover:bg-neutral-200 md:text-sm lg:p-6 lg:text-lg">
+              <Link
+                href="/services"
+                className="flex items-center gap-1 lg:gap-2"
+              >
+                Bekijk onze vacatures{" "}
+                <ArrowRight className="size-3 md:size-4" />
+              </Link>
+            </Button>
+          </div>
+          <div className="absolute right-0 bottom-0 h-3/5 w-full bg-blue-600/90 md:h-9/10 md:w-1/2 md:rounded-tl-md lg:top-12 lg:h-1/2 lg:h-9/10 lg:rounded-l-md"></div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,4 +1,3 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import {
   Breadcrumb,
@@ -11,12 +10,14 @@ import {
 
 export default function About() {
   return (
-    <div data-nav-theme="dark" className="bg-black py-36">
-      <div className="mx-auto max-w-[1700px] px-8">
-        <Breadcrumb className="mb-6">
-          <BreadcrumbList className="text-md">
+    <div data-nav-theme="dark" className="bg-black py-24 lg:py-36">
+      <div className="mx-auto max-w-[1700px] px-4 md:px-8">
+        <Breadcrumb className="mb-4 lg:mb-6">
+          <BreadcrumbList className="text-xs lg:text-base">
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+              <BreadcrumbLink className="hover:text-white" href="/">
+                Home
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -24,12 +25,12 @@ export default function About() {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="font-heading mb-36 text-7xl text-white">
+        <h1 className="font-heading mb-12 text-4xl text-white md:mb-24 md:text-5xl lg:mb-36 lg:text-7xl">
           Maak kennis met Özad Elektrotechniek
         </h1>
-        <div className="mx-auto mb-36 max-w-4xl space-y-24 text-2xl font-medium text-neutral-500">
-          <section className="space-y-8">
-            <h2 className="text-4xl font-bold text-white">
+        <div className="mx-auto mb-12 max-w-4xl space-y-12 font-medium text-neutral-500 md:mb-24 md:px-12 lg:mb-36 lg:space-y-24 lg:px-0 lg:text-2xl">
+          <section className="space-y-4 lg:space-y-8">
+            <h2 className="text-xl font-bold text-white md:text-2xl lg:text-4xl">
               Focus op hoogwaardige diensten
             </h2>
             <p>
@@ -44,8 +45,8 @@ export default function About() {
               klanttevredenheid staat bij ons altijd voorop.
             </p>
           </section>
-          <section className="space-y-8">
-            <h2 className="text-4xl font-bold text-white">
+          <section className="space-y-4 lg:space-y-8">
+            <h2 className="text-xl font-bold text-white md:text-2xl lg:text-4xl">
               Ervaring die spreekt
             </h2>
             <p>
@@ -66,9 +67,9 @@ export default function About() {
             </p>
           </section>
         </div>
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
           <div>
-            <AspectRatio ratio={4 / 4}>
+            <div className="relative aspect-[4/3] lg:aspect-[4/4]">
               <Image
                 src="/images/about/over-ozad-elektrotechniek-2.webp"
                 fill
@@ -76,10 +77,10 @@ export default function About() {
                 className="rounded-md object-cover"
                 priority
               />
-            </AspectRatio>
+            </div>
           </div>
           <div>
-            <AspectRatio ratio={4 / 4}>
+            <div className="relative aspect-[4/3] lg:aspect-[4/4]">
               <Image
                 src="/images/about/over-ozad-elektrotechniek-3.webp"
                 fill
@@ -87,7 +88,7 @@ export default function About() {
                 className="rounded-md object-cover"
                 priority
               />
-            </AspectRatio>
+            </div>
           </div>
         </div>
       </div>

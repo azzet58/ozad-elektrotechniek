@@ -2,8 +2,8 @@ import "./globals.css";
 import { Inter, Anton } from "next/font/google";
 import { ReactLenis } from "@/utils/lenis";
 import "lenis/dist/lenis.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import LenisScrollToTop from "@/utils/lenis-scroll-to-top";
 
 const inter = Inter({

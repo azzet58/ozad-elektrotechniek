@@ -1,4 +1,3 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -14,10 +13,10 @@ import {
 
 export default function Services() {
   return (
-    <div data-nav-theme="light" className="py-36">
-      <div className="mx-auto max-w-[1700px] px-8">
-        <Breadcrumb className="mb-6">
-          <BreadcrumbList className="text-md">
+    <div data-nav-theme="light" className="py-24 lg:py-36">
+      <div className="mx-auto max-w-[1700px] px-4 md:px-8">
+        <Breadcrumb className="mb-4 lg:mb-6">
+          <BreadcrumbList className="text-xs lg:text-base">
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Home</BreadcrumbLink>
             </BreadcrumbItem>
@@ -27,54 +26,51 @@ export default function Services() {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <h1 className="font-heading mb-36 text-7xl">
+        <h1 className="font-heading mb-12 text-4xl md:text-5xl lg:mb-36 lg:text-7xl">
           Sluit je aan bij de Özad familie
         </h1>
-        <div className="grid grid-cols-2 gap-12">
-          <div className="space-y-36 py-36">
-            <h2 className="text-center text-5xl font-bold text-black">
+        <div className="grid md:grid-cols-2">
+          <div className="space-y-12 rounded-t-md bg-zinc-800 px-12 py-12 md:rounded-t-none md:rounded-l-md lg:space-y-24 lg:py-36">
+            <h2 className="text-center text-xl font-semibold text-black text-white md:text-2xl lg:text-5xl">
               Elektromonteur
             </h2>
-            <div className="flex flex-col gap-12">
-              <Button className="self-center rounded-full bg-blue-600 p-6 text-lg font-bold hover:bg-black">
+            <div className="flex justify-center gap-2 lg:gap-4">
+              <Button className="self-start rounded-full bg-blue-600 p-5 font-bold hover:bg-black md:text-sm lg:p-7 lg:text-lg">
                 <Link
                   href="https://api.whatsapp.com/send?phone=31686297002"
                   className="flex items-center gap-2"
                 >
-                  <FaWhatsapp className="size-6" />
-                  Neem nu contact op
+                  <FaWhatsapp className="size-4 lg:size-7" />
                 </Link>
               </Button>
-              <Button className="self-center rounded-full bg-blue-600 p-6 text-lg font-bold hover:bg-black">
+              <Button className="self-start rounded-full bg-blue-600 p-5 font-bold hover:bg-black md:text-sm lg:p-7 lg:text-lg">
                 <Link
                   href="tel:31626324551"
                   className="flex items-center gap-2"
                 >
-                  <FaPhoneAlt className="size-4" />
-                  Neem nu contact op
+                  <FaPhoneAlt className="size-3 lg:size-5" />
                 </Link>
               </Button>
-              <Button className="self-center rounded-full bg-blue-600 p-6 text-lg font-bold hover:bg-black">
+              <Button className="self-start rounded-full bg-blue-600 p-5 font-bold hover:bg-black md:text-sm lg:p-7 lg:text-lg">
                 <Link
                   href="mailto:info@ozadelektrotechniek.nl"
                   className="flex items-center gap-2"
                 >
-                  <FaEnvelope className="size-4" />
-                  Neem nu contact op
+                  <FaEnvelope className="size-3 lg:size-5" />
                 </Link>
               </Button>
             </div>
           </div>
-          <div>
-            <AspectRatio ratio={4 / 4}>
+          <div className="overflow-hidden rounded-b-md md:rounded-r-md md:rounded-b-none">
+            <div className="relative aspect-[4/4]">
               <Image
                 src="/images/services/elektromonteur.webp"
                 fill
                 alt=""
-                className="rounded-md object-cover"
+                className="h-full object-cover"
                 priority
               />
-            </AspectRatio>
+            </div>
           </div>
         </div>
       </div>
