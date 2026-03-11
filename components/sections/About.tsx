@@ -1,61 +1,66 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import Image from "next/image";
+"use client";
+
+import { Counter } from "@/components/ui/counter";
+import { FadeIn } from "@/components/animations/fade-in";
+import { TypingText } from "@/components/animations/typing-text";
+import { ParallaxImage } from "@/components/animations/parallax-image";
 
 export default function About() {
   return (
     <section
       data-nav-theme="dark"
-      className="relative pt-12 pb-48 md:pt-24 md:pb-96 lg:py-64"
+      className="relative pt-12 pb-48 sm:pb-52 md:pt-24 md:pb-112 lg:py-36 xl:py-64"
     >
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
-        <div className="grid gap-24 lg:grid-cols-2 lg:gap-48">
-          <div className="space-y-12 lg:space-y-24">
-            <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">
-              Gespecialiseerd in nieuwbouw, utiliteitsbouw, renovatie &
-              brandveiligheid!
+        <div className="grid gap-24 lg:grid-cols-2 xl:gap-48">
+          <div className="space-y-12 xl:space-y-24">
+            <h2 className="text-3xl font-bold md:text-4xl xl:text-5xl">
+              <TypingText text="Gespecialiseerd in nieuwbouw, utiliteitsbouw, renovatie & brandveiligheid!" />
             </h2>
-            <p className="font-medium text-neutral-500 lg:text-2xl">
-              Wij zijn Özad Elektrotechniek B.V, een elektro-installatiebedrijf
-              gevestigd in Rotterdam. Met jarenlange ervaring, meer dan 1000
-              woningen gerealiseerd samen met onze top monteurs. Wij bieden
-              passie voor techniek en betrouwbare en innovatieve oplossingen
-              voor bedrijven.
-            </p>
+            <FadeIn>
+              <p className="font-medium text-neutral-500 xl:text-2xl">
+                Wij zijn Özad Elektrotechniek B.V, een
+                elektro-installatiebedrijf gevestigd in Rotterdam. Met
+                jarenlange ervaring, meer dan 1000 woningen gerealiseerd samen
+                met onze top monteurs. Wij bieden passie voor techniek en
+                betrouwbare en innovatieve oplossingen voor bedrijven.
+              </p>
+            </FadeIn>
             <div className="flex place-content-between md:place-content-start md:space-x-24 lg:place-content-between">
-              <div className="md:space-y-1 lg:space-y-2">
-                <h3 className="font-heading text-3xl md:text-4xl lg:text-6xl">
-                  1.000+
+              <div className="md:space-y-1 xl:space-y-2">
+                <h3 className="font-heading text-3xl md:w-12 md:text-4xl xl:w-36 xl:text-6xl">
+                  <Counter to={1000} suffix="+" />
                 </h3>
-                <p className="text-xs font-medium md:text-sm lg:text-xl">
+                <p className="text-xs font-medium md:text-sm xl:text-xl">
                   Woningen
                 </p>
               </div>
-              <div className="md:space-y-1 lg:space-y-2">
-                <h3 className="font-heading text-3xl md:text-4xl lg:text-6xl">
-                  20+
+              <div className="md:space-y-1 xl:space-y-2">
+                <h3 className="font-heading text-3xl md:w-12 md:text-4xl xl:w-36 xl:text-6xl">
+                  <Counter to={20} suffix="+" />
                 </h3>
-                <p className="text-xs font-medium md:text-sm lg:text-xl">
+                <p className="text-xs font-medium md:text-sm xl:text-xl">
                   Jaar
                 </p>
               </div>
-              <div className="md:space-y-1 lg:space-y-2">
-                <h3 className="font-heading text-3xl md:text-4xl lg:text-6xl">
-                  24/7
+              <div className="md:space-y-1 xl:space-y-2">
+                <h3 className="font-heading text-3xl md:w-12 md:text-4xl xl:w-36 xl:text-6xl">
+                  <Counter to={24} />
+                  <span>/</span>
+                  <Counter to={7} />
                 </h3>
-                <p className="text-xs font-medium md:text-sm lg:text-xl">
+                <p className="text-xs font-medium md:text-sm xl:text-xl">
                   Beschikbaar
                 </p>
               </div>
             </div>
           </div>
           <div>
-            <div className="absolute bottom-12 h-1/5 w-[90%] md:bottom-24 md:h-1/3 md:w-[60%] lg:top-32 lg:right-24 lg:h-3/4 lg:w-[45%]">
-              <Image
+            <div className="absolute bottom-12 h-1/5 w-[90%] overflow-hidden sm:h-1/4 rounded-md md:bottom-24 md:h-2/5 md:w-[92%] lg:top-24 lg:right-8 lg:h-3/4 lg:w-[45%]">
+              <ParallaxImage
                 src="/images/about/over-ozad-elektrotechniek.webp"
-                fill
                 alt="Over Özad Elektrotechniek"
-                className="rounded-md object-cover"
-                priority
+                className="absolute inset-0 object-cover"
               />
             </div>
           </div>

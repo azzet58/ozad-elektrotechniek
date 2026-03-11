@@ -6,6 +6,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { FadeIn } from "@/components/animations/fade-in";
 
 const navLinks = [
   {
@@ -20,7 +21,7 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
@@ -78,12 +79,12 @@ export default function Navbar() {
                 priority
                 className={
                   isDark || mobileOpen
-                    ? "w-26 brightness-0 invert lg:w-36"
-                    : "w-26 lg:w-36"
+                    ? "w-26 brightness-0 invert xl:w-36"
+                    : "w-26 xl:w-36"
                 }
               />
             </Link>
-            <ul className="flex hidden items-center gap-6 font-medium md:flex lg:gap-8 lg:text-xl">
+            <ul className="flex hidden items-center gap-6 font-medium md:flex xl:gap-8 xl:text-xl">
               {navLinks.map((item) => {
                 const isActive =
                   pathname === item.href ||
@@ -93,7 +94,7 @@ export default function Navbar() {
                     {item.isButton ? (
                       <Button
                         asChild
-                        className="h-full rounded-full bg-blue-600 text-xs font-bold hover:bg-black md:text-sm lg:text-lg"
+                        className="h-full cursor-pointer rounded-full bg-blue-600 text-xs font-bold hover:bg-blue-700 md:text-sm xl:text-lg"
                       >
                         <Link href={item.href}>{item.title}</Link>
                       </Button>
@@ -144,24 +145,28 @@ export default function Navbar() {
             return (
               <div key={item.href}>
                 {item.isButton ? (
-                  <Button
-                    asChild
-                    className="mt-6 w-full rounded-full bg-blue-600 font-sans font-bold hover:bg-black"
-                  >
-                    <Link href={item.href}>{item.title}</Link>
-                  </Button>
+                  <FadeIn>
+                    <Button
+                      asChild
+                      className="mt-6 w-full rounded-full bg-blue-600 font-sans font-bold hover:bg-black"
+                    >
+                      <Link href={item.href}>{item.title}</Link>
+                    </Button>
+                  </FadeIn>
                 ) : (
-                  <Link
-                    href={item.href}
-                    className={`flex items-center gap-1 text-3xl font-medium text-white transition-colors ${
-                      isActive
-                        ? "text-blue-600"
-                        : "text-black hover:text-blue-600"
-                    }`}
-                  >
-                    {item.title}
-                    {item.hasDropdown && <ChevronDown />}
-                  </Link>
+                  <FadeIn>
+                    <Link
+                      href={item.href}
+                      className={`flex items-center gap-1 text-3xl font-medium text-white transition-colors ${
+                        isActive
+                          ? "text-blue-600"
+                          : "text-black hover:text-blue-600"
+                      }`}
+                    >
+                      {item.title}
+                      {item.hasDropdown && <ChevronDown />}
+                    </Link>
+                  </FadeIn>
                 )}
               </div>
             );

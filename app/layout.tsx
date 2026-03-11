@@ -5,6 +5,7 @@ import "lenis/dist/lenis.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import LenisScrollToTop from "@/utils/lenis-scroll-to-top";
+import { FadeIn } from "@/components/animations/fade-in";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,8 +34,10 @@ export default function RootLayout({
             <Navbar />
           </header>
           <main className="grow">{children}</main>
-          <footer>
-            <Footer />
+          <footer className="bg-neutral-900">
+            <FadeIn>
+              <Footer />
+            </FadeIn>
           </footer>
         </body>
       </ReactLenis>
