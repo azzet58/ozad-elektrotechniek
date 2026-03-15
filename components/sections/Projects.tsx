@@ -64,14 +64,14 @@ export default function Projects() {
       <div ref={containerRef} className="overflow-hidden">
         <motion.div
           style={{ x }}
-          className="flex flex-col gap-4 pl-4 will-change-transform md:pl-8 lg:flex-row lg:pl-64"
+          className="flex flex-col gap-4 pr-4 pl-4 will-change-transform md:pr-8 md:pl-8 lg:flex-row lg:pl-64"
         >
           {projects
             .slice(0, mounted && isDesktop ? projects.length : 3)
             .map((project) => (
               <article key={project.href}>
                 <Link href={project.href} className="group">
-                  <div className="relative w-[290px] overflow-hidden rounded-md sm:w-[395px] md:w-[705px] lg:w-[600px] xl:w-[1024px]">
+                  <div className="relative w-full overflow-hidden rounded-md lg:w-[600px] xl:w-[1024px]">
                     <div className="relative aspect-[4/4] md:aspect-[16/10] lg:aspect-[4/4]">
                       <Image
                         src={project.image}

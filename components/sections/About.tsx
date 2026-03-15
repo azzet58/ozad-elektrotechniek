@@ -9,10 +9,10 @@ export default function About() {
   return (
     <section
       data-nav-theme="dark"
-      className="relative pt-12 pb-48 sm:pb-52 md:pt-24 md:pb-112 lg:py-36 xl:py-64"
+      className="relative pt-12 pb-12 md:pt-24 md:pb-24 lg:py-36 xl:py-64"
     >
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
-        <div className="grid gap-24 lg:grid-cols-2 xl:gap-48">
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-24 xl:gap-48">
           <div className="space-y-12 xl:space-y-24">
             <h2 className="text-3xl font-bold md:text-4xl xl:text-5xl">
               <TypingText text="Gespecialiseerd in nieuwbouw, utiliteitsbouw, renovatie & brandveiligheid!" />
@@ -56,7 +56,7 @@ export default function About() {
             </div>
           </div>
           <div>
-            <div className="absolute bottom-12 h-1/5 w-[90%] overflow-hidden sm:h-1/4 rounded-md md:bottom-24 md:h-2/5 md:w-[92%] lg:top-24 lg:right-8 lg:h-3/4 lg:w-[45%]">
+            <div className="relative h-64 w-full overflow-hidden rounded-md sm:h-80 md:h-96 lg:absolute lg:top-36 lg:right-8 lg:h-3/4 lg:w-[45%]">
               <ParallaxImage
                 src="/images/about/over-ozad-elektrotechniek.webp"
                 alt="Over Özad Elektrotechniek"

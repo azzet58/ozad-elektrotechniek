@@ -19,10 +19,19 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { FadeIn } from "@/components/animations/fade-in";
-import { useState } from "react";
+import { useActionState, useEffect, useRef } from "react";
+import { sendContactForm } from "@/app/actions/contact";
 
 export default function Contact() {
-  const [mapActive, setMapActive] = useState(false);
+  const [state, formAction, isPending] = useActionState(sendContactForm, null);
+
+  const formRef = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    if (state?.success) {
+      formRef.current?.reset();
+    }
+  }, [state]);
 
   return (
     <div data-nav-theme="light" className="pt-24 lg:pt-36">
@@ -48,51 +57,83 @@ export default function Contact() {
               met ons op via het contactformulier hieronder of via WhatsApp.
             </p>
           </div>
-          <FieldSet className="mb-12 lg:mb-24">
-            <FieldGroup>
-              <div className="grid grid-cols-2 gap-6">
+
+          <form action={formAction} ref={formRef}>
+            <input
+              type="text"
+              name="honeypot"
+              className="hidden"
+              tabIndex={-1}
+              autoComplete="off"
+            />
+            <FieldSet className="mb-12 lg:mb-24">
+              <FieldGroup>
+                <div className="grid grid-cols-2 gap-6">
+                  <Field>
+                    <FieldLabel htmlFor="name" className="xl:text-xl">
+                      Naam
+                    </FieldLabel>
+                    <Input
+                      id="name"
+                      name="name"
+                      type="text"
+                      className="h-12 md:!text-base xl:h-16 xl:!text-xl"
+                    />
+                  </Field>
+                  <Field>
+                    <FieldLabel htmlFor="phone" className="xl:text-xl">
+                      Telefoonnummer
+                    </FieldLabel>
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      className="h-12 md:!text-base xl:h-16 xl:!text-xl"
+                    />
+                  </Field>
+                </div>
                 <Field>
-                  <FieldLabel htmlFor="name" className="xl:text-xl">
-                    Naam
+                  <FieldLabel htmlFor="email" className="xl:text-xl">
+                    E-mailadres
                   </FieldLabel>
                   <Input
-                    type="text"
+                    id="email"
+                    name="email"
+                    type="email"
                     className="h-12 md:!text-base xl:h-16 xl:!text-xl"
                   />
                 </Field>
                 <Field>
-                  <FieldLabel htmlFor="phone" className="xl:text-xl">
-                    Telefoonnummer
+                  <FieldLabel htmlFor="message" className="xl:text-xl">
+                    Bericht
                   </FieldLabel>
-                  <Input
-                    type="tel"
-                    className="h-12 md:!text-base xl:h-16 xl:!text-xl"
+                  <Textarea
+                    id="message"
+                    name="message"
+                    className="h-36 md:!text-base xl:h-64 xl:!text-xl"
                   />
                 </Field>
-              </div>
-              <Field>
-                <FieldLabel htmlFor="email" className="xl:text-xl">
-                  E-mailadres
-                </FieldLabel>
-                <Input
-                  type="email"
-                  className="h-12 md:!text-base xl:h-16 xl:!text-xl"
-                />
-              </Field>
-              <Field>
-                <FieldLabel htmlFor="message" className="xl:text-xl">
-                  Bericht
-                </FieldLabel>
-                <Textarea className="h-36 md:!text-base xl:h-64 xl:!text-xl" />
-              </Field>
-              <Button
-                type="submit"
-                className="cursor-pointer self-start rounded-full bg-blue-600 p-4 text-xs font-bold hover:bg-blue-700 md:text-sm xl:p-6 xl:text-lg"
-              >
-                Versturen
-              </Button>
-            </FieldGroup>
-          </FieldSet>
+
+                {state && (
+                  <p
+                    className={
+                      state.success ? "text-green-600" : "text-red-500"
+                    }
+                  >
+                    {state.message}
+                  </p>
+                )}
+
+                <Button
+                  type="submit"
+                  disabled={isPending}
+                  className="cursor-pointer self-start rounded-full bg-blue-600 p-4 text-xs font-bold hover:bg-blue-700 disabled:opacity-50 md:text-sm xl:p-6 xl:text-lg"
+                >
+                  {isPending ? "Versturen..." : "Versturen"}
+                </Button>
+              </FieldGroup>
+            </FieldSet>
+          </form>
         </FadeIn>
       </div>
       <FadeIn>
@@ -102,7 +143,7 @@ export default function Contact() {
             allowFullScreen
             height="800"
             loading="lazy"
-            className="h-[30vh] w-full md:h-[50vh] xl:h-[100vh]"
+            className="h-[50vh] w-full xl:h-[100vh]"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
