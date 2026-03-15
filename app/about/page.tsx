@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -14,7 +12,7 @@ import { ParallaxImage } from "@/components/animations/parallax-image";
 
 export default function About() {
   return (
-    <div data-nav-theme="dark" className="bg-black py-24 lg:py-36">
+    <main data-nav-theme="dark" className="bg-black py-24 lg:py-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
           <BreadcrumbList className="text-xs md:text-sm xl:text-base">
@@ -107,6 +105,6 @@ export default function About() {
           </div>
         </FadeIn>
       </div>
-    </div>
+    </main>
   );
 }

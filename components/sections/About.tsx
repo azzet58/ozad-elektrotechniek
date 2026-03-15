@@ -58,7 +58,7 @@ export default function About() {
           <div>
             <div className="relative h-64 w-full overflow-hidden rounded-md sm:h-80 md:h-96 lg:absolute lg:top-36 lg:right-8 lg:h-3/4 lg:w-[45%]">
               <ParallaxImage
-                src="/images/about/over-ozad-elektrotechniek.webp"
+                src="/images/about/over-ozad-elektrotechniek-1.webp"
                 alt="Over Özad Elektrotechniek"
                 className="absolute inset-0 object-cover"
               />

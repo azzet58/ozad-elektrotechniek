@@ -1,5 +1,3 @@
-"use client";
-
 import { projects } from "@/data/projects";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -18,7 +16,7 @@ type Project = (typeof projects)[number];
 
 export default function ProjectClient({ project }: { project: Project }) {
   return (
-    <div data-nav-theme="light" className="py-24 lg:py-36">
+    <main data-nav-theme="light" className="py-24 lg:py-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
           <BreadcrumbList className="text-xs md:text-sm xl:text-base">
@@ -156,6 +154,6 @@ export default function ProjectClient({ project }: { project: Project }) {
           )}
         </FadeIn>
       </div>
-    </div>
+    </main>
   );
 }

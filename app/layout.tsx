@@ -10,12 +10,14 @@ import { FadeIn } from "@/components/animations/fade-in";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
 });
 
 const anton = Anton({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-anton",
+  display: "swap",
 });
 
 export default function RootLayout({

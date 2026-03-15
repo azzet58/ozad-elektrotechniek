@@ -14,7 +14,7 @@ import { FadeIn } from "@/components/animations/fade-in";
 
 export default function Projects() {
   return (
-    <div data-nav-theme="light" className="py-24 lg:py-36">
+    <main data-nav-theme="light" className="py-24 lg:py-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
           <BreadcrumbList className="text-xs md:text-sm xl:text-base">
@@ -33,7 +33,7 @@ export default function Projects() {
           </h1>
         </FadeIn>
         <div className="flex flex-col gap-4 overflow-hidden xl:gap-12">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <FadeIn key={project.href}>
               <article>
                 <Link href={project.href} className="group">
@@ -44,7 +44,7 @@ export default function Projects() {
                         fill
                         alt={project.title}
                         className="object-cover transition-transform duration-800 group-hover:scale-105"
-                        priority
+                        priority={index === 0}
                       />
                       {project.status && (
                         <div className="absolute">
@@ -81,6 +81,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </div>
+    </main>
   );
 }

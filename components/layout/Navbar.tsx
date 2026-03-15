@@ -72,7 +72,7 @@ export default function Navbar() {
           <div className="flex h-full items-center justify-between">
             <Link href="/">
               <Image
-                src="/images/logos/ozad-elektrotechniek-logo-black.png"
+                src="/images/logos/ozad-elektrotechniek-logo-black.webp"
                 width={150}
                 height={150}
                 alt="Özad Elektrotechniek Logo"

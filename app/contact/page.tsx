@@ -34,7 +34,7 @@ export default function Contact() {
   }, [state]);
 
   return (
-    <div data-nav-theme="light" className="pt-24 lg:pt-36">
+    <main data-nav-theme="light" className="pt-24 lg:pt-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
           <BreadcrumbList className="text-xs md:text-sm xl:text-base">
@@ -144,10 +144,11 @@ export default function Contact() {
             height="800"
             loading="lazy"
             className="h-[50vh] w-full xl:h-[100vh]"
+            title="Locatie Özad Elektrotechniek Rotterdam"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </FadeIn>
-    </div>
+    </main>
   );
 }
