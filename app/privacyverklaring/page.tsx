@@ -11,7 +11,7 @@ import { FadeIn } from "@/components/animations/fade-in";
 
 export default function PrivacyPolicy() {
   return (
-    <main data-nav-theme="light" className="py-24 lg:py-36">
+    <div data-nav-theme="light" className="py-24 lg:py-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
           <BreadcrumbList className="text-xs md:text-sm xl:text-base">
@@ -252,6 +252,6 @@ export default function PrivacyPolicy() {
           </div>
         </FadeIn>
       </div>
-    </main>
+    </div>
   );
 }

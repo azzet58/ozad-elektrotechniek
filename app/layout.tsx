@@ -6,6 +6,30 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import LenisScrollToTop from "@/utils/lenis-scroll-to-top";
 import { FadeIn } from "@/components/animations/fade-in";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Özad Elektrotechniek | Elektro-installatiebedrijf Rotterdam",
+  description:
+    "Özad Elektrotechniek B.V. is een elektro-installatiebedrijf gevestigd in Rotterdam. Gespecialiseerd in nieuwbouw, utiliteitsbouw, renovatie en brandveiligheid.",
+  keywords: [
+    "elektricien Rotterdam",
+    "elektro-installatie",
+    "nieuwbouw elektra",
+    "utiliteitsbouw",
+    "brandveiligheid",
+    "Özad Elektrotechniek",
+  ],
+  openGraph: {
+    title: "Özad Elektrotechniek | Elektro-installatiebedrijf Rotterdam",
+    description:
+      "Gespecialiseerd in nieuwbouw, utiliteitsbouw, renovatie en brandveiligheid.",
+    url: "https://www.ozadelektrotechniek.nl",
+    siteName: "Özad Elektrotechniek",
+    locale: "nl_NL",
+    type: "website",
+  },
+};
 
 const inter = Inter({
   subsets: ["latin"],

@@ -11,11 +11,11 @@ import { FadeIn } from "@/components/animations/fade-in";
 const navLinks = [
   {
     title: "Diensten",
-    href: "/services",
+    href: "/diensten",
     hasDropdown: false,
   },
-  { title: "Projecten", href: "/projects" },
-  { title: "Over ons", href: "/about" },
+  { title: "Projecten", href: "/projecten" },
+  { title: "Over ons", href: "/over-ons" },
   { title: "Neem contact op", href: "/contact", isButton: true },
 ];
 

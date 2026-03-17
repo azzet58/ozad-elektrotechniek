@@ -29,7 +29,7 @@ export default function Services() {
             <FadeIn>
               <Button className="cursor-pointer rounded-full bg-white p-4 text-xs font-bold text-black hover:bg-neutral-100 md:text-sm xl:p-6 xl:text-lg">
                 <Link
-                  href="/services"
+                  href="/diensten"
                   className="flex items-center gap-1 lg:gap-2"
                 >
                   Bekijk onze vacatures{" "}

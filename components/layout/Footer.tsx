@@ -2,12 +2,12 @@ import Link from "next/link";
 import { FaLinkedin, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 
-const servicesLinks = [{ title: "Alle diensten", href: "/services" }];
+const servicesLinks = [{ title: "Alle diensten", href: "/diensten" }];
 
-const projectsLinks = [{ title: "Alle projecten", href: "/projects" }];
+const projectsLinks = [{ title: "Alle projecten", href: "/projecten" }];
 
 const companyLinks = [
-  { title: "Over ons", href: "/about" },
+  { title: "Over ons", href: "/over-ons" },
   { title: "Contact", href: "/contact" },
 ];
 
@@ -19,7 +19,7 @@ const certificateLogos = [
 
 const legacyLinks = [
   { title: "Disclaimer", href: "/disclaimer" },
-  { title: "Privacyverklaring", href: "/privacy-policy" },
+  { title: "Privacyverklaring", href: "/privacyverklaring" },
 ];
 
 const socialLinks = [

@@ -16,7 +16,7 @@ type Project = (typeof projects)[number];
 
 export default function ProjectClient({ project }: { project: Project }) {
   return (
-    <main data-nav-theme="light" className="py-24 lg:py-36">
+    <div data-nav-theme="light" className="py-24 lg:py-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
           <BreadcrumbList className="text-xs md:text-sm xl:text-base">
@@ -25,7 +25,7 @@ export default function ProjectClient({ project }: { project: Project }) {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/projects">Projecten</BreadcrumbLink>
+              <BreadcrumbLink href="/projecten">Projecten</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -40,7 +40,7 @@ export default function ProjectClient({ project }: { project: Project }) {
           <div className="relative aspect-[4/4] overflow-hidden rounded-t-md md:aspect-[16/9]">
             <ParallaxImage
               src={project.image}
-              alt=""
+              alt={project.title}
               className="absolute inset-0 rounded-t-md object-cover"
               priority
             />
@@ -142,7 +142,7 @@ export default function ProjectClient({ project }: { project: Project }) {
                       <div className="relative aspect-[4/3] overflow-hidden rounded-md xl:aspect-[4/4]">
                         <ParallaxImage
                           src={image}
-                          alt=""
+                          alt={project.title}
                           className="absolute inset-0 rounded-md object-cover"
                         />
                       </div>
@@ -154,6 +154,6 @@ export default function ProjectClient({ project }: { project: Project }) {
           )}
         </FadeIn>
       </div>
-    </main>
+    </div>
   );
 }

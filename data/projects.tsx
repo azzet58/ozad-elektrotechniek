@@ -28,7 +28,7 @@ export const projects: Project[] = [
     term: "2024 - heden",
     image:
       "/images/projects/canvas-living-brainpark/canvas-living-brainpark.webp",
-    href: "/projects/canvas-living-brainpark",
+    href: "/projecten/canvas-living-brainpark",
     sections: [
       {
         heading: "Onze opdracht",
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     location: "Leiden",
     term: "2025 - heden",
     image: "/images/projects/corantijn.webp",
-    href: "/projects/corantijn",
+    href: "/projecten/corantijn",
     sections: [
       {
         heading: null,
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     location: "Rotterdam",
     term: "2022 - 2024",
     image: "/images/projects/nieuw-kralingen/nieuw-kralingen.webp",
-    href: "/projects/nieuw-kralingen",
+    href: "/projecten/nieuw-kralingen",
     sections: [
       {
         heading: "Onze opdracht",
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     location: "Rotterdam",
     term: "2023 - heden",
     image: "/images/projects/sawa.webp",
-    href: "/projects/sawa",
+    href: "/projecten/sawa",
     sections: [
       {
         heading: "Onze opdracht",
@@ -115,7 +115,7 @@ export const projects: Project[] = [
     location: "Utrecht",
     term: "2024 - heden",
     image: "/images/projects/duwboot-22.webp",
-    href: "/projects/duwboot-22",
+    href: "/projecten/duwboot-22",
     sections: [
       {
         heading: "Onze opdracht",

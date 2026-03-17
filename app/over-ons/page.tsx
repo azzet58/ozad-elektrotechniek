@@ -9,10 +9,17 @@ import {
 import { FadeIn } from "@/components/animations/fade-in";
 import { TypingText } from "@/components/animations/typing-text";
 import { ParallaxImage } from "@/components/animations/parallax-image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Over Ons | Özad Elektrotechniek",
+  description:
+    "Maak kennis met Özad Elektrotechniek B.V. Met jarenlange ervaring en meer dan 1000 woningen opgeleverd, leveren wij betrouwbare elektrotechnische oplossingen.",
+};
 
 export default function About() {
   return (
-    <main data-nav-theme="dark" className="bg-black py-24 lg:py-36">
+    <div data-nav-theme="dark" className="bg-black py-24 lg:py-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
           <BreadcrumbList className="text-xs md:text-sm xl:text-base">
@@ -88,7 +95,7 @@ export default function About() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-md xl:aspect-[4/4]">
                 <ParallaxImage
                   src="/images/about/over-ozad-elektrotechniek-2.webp"
-                  alt=""
+                  alt="Özad Elektrotechniek team aan het werk"
                   className="rounded-md object-cover"
                 />
               </div>
@@ -97,7 +104,7 @@ export default function About() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-md xl:aspect-[4/4]">
                 <ParallaxImage
                   src="/images/about/over-ozad-elektrotechniek-3.webp"
-                  alt=""
+                  alt="Özad Elektrotechniek team aan het werk"
                   className="rounded-md object-cover"
                 />
               </div>
@@ -105,6 +112,6 @@ export default function About() {
           </div>
         </FadeIn>
       </div>
-    </main>
+    </div>
   );
 }

@@ -11,6 +11,13 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { FadeIn } from "@/components/animations/fade-in";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Diensten | Özad Elektrotechniek",
+  description:
+    "Özad Elektrotechniek B.V. is op zoek naar elektromonteurs. Sluit je aan bij ons team in Rotterdam.",
+};
 
 export default function Services() {
   return (
@@ -68,7 +75,7 @@ export default function Services() {
                 <Image
                   src="/images/services/elektromonteur.webp"
                   fill
-                  alt=""
+                  alt="Elektromonteur bij Özad Elektrotechniek"
                   className="h-full object-cover"
                   priority
                 />

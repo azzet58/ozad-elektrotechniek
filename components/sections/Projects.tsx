@@ -54,7 +54,7 @@ export default function Projects() {
             Projecten
           </h2>
           <Link
-            href="/projects"
+            href="/projecten"
             className="flex items-center gap-1 text-xs font-bold hover:text-neutral-600 md:text-sm lg:gap-2 xl:text-lg"
           >
             Bekijk alle projecten <ArrowRight className="size-3 md:size-4" />

@@ -11,10 +11,17 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { FadeIn } from "@/components/animations/fade-in";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projecten | Özad Elektrotechniek",
+  description:
+    "Bekijk de uitgevoerde projecten van Özad Elektrotechniek B.V. in nieuwbouw, utiliteitsbouw en renovatie door heel Nederland.",
+};
 
 export default function Projects() {
   return (
-    <main data-nav-theme="light" className="py-24 lg:py-36">
+    <div data-nav-theme="light" className="py-24 lg:py-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
           <BreadcrumbList className="text-xs md:text-sm xl:text-base">
@@ -81,6 +88,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </main>
+    </div>
   );
 }
