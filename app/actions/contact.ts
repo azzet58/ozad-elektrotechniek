@@ -28,7 +28,7 @@ export async function sendContactForm(
   try {
     await resend.emails.send({
       from: "Özad Elektrotechniek <onboarding@resend.dev>",
-      to: "akosgultekin@gmail.com",
+      to: "info@ozadelektrotechniek.nl",
       replyTo: email,
       subject: `Nieuw bericht van ${name}`,
       html: `
