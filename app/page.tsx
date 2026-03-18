@@ -1,7 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Projects from "@/components/sections/Projects";
-import Services from "@/components/sections/Services";
+import Services from "@/components/sections/Careers";
 import { FadeIn } from "@/components/animations/fade-in";
 import type { Metadata } from "next";
 

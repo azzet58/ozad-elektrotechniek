@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaLinkedin, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 
-const servicesLinks = [{ title: "Alle diensten", href: "/diensten" }];
+const servicesLinks = [{ title: "Alle vacatures", href: "/vacatures" }];
 
 const projectsLinks = [{ title: "Alle projecten", href: "/projecten" }];
 

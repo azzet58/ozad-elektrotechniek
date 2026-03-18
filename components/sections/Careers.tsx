@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 import { ParallaxImage } from "@/components/animations/parallax-image";
 
-export default function Services() {
+export default function Careers() {
   return (
     <section className="relative pt-24 pb-12 sm:py-24 lg:py-36 xl:py-64">
       <div className="mx-auto max-w-[1700px] px-4 lg:px-12">
@@ -29,7 +29,7 @@ export default function Services() {
             <FadeIn>
               <Button className="cursor-pointer rounded-full bg-white p-4 text-xs font-bold text-black hover:bg-neutral-100 md:text-sm xl:p-6 xl:text-lg">
                 <Link
-                  href="/diensten"
+                  href="/vacatures"
                   className="flex items-center gap-1 lg:gap-2"
                 >
                   Bekijk onze vacatures{" "}

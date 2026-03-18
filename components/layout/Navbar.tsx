@@ -10,8 +10,8 @@ import { FadeIn } from "@/components/animations/fade-in";
 
 const navLinks = [
   {
-    title: "Diensten",
-    href: "/diensten",
+    title: "Vacatures",
+    href: "/vacatures",
     hasDropdown: false,
   },
   { title: "Projecten", href: "/projecten" },

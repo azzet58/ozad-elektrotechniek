@@ -14,7 +14,7 @@ import { FadeIn } from "@/components/animations/fade-in";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Diensten | Özad Elektrotechniek",
+  title: "Vacatures | Özad Elektrotechniek",
   description:
     "Özad Elektrotechniek B.V. is op zoek naar elektromonteurs. Sluit je aan bij ons team in Rotterdam.",
 };
@@ -30,7 +30,7 @@ export default function Services() {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage>Diensten</BreadcrumbPage>
+              <BreadcrumbPage>Vacatures</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>

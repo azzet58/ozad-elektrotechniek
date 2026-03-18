@@ -8,6 +8,13 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { FadeIn } from "@/components/animations/fade-in";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+  },
+};
 
 export default function PrivacyPolicy() {
   return (
