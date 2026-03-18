@@ -45,12 +45,10 @@ export default function About() {
               </div>
               <div className="md:space-y-1 xl:space-y-2">
                 <h3 className="font-heading text-3xl md:w-12 md:text-4xl xl:w-36 xl:text-6xl">
-                  <Counter to={24} />
-                  <span>/</span>
-                  <Counter to={7} />
+                  <Counter to={20} suffix="+" />
                 </h3>
                 <p className="text-xs font-medium md:text-sm xl:text-xl">
-                  Beschikbaar
+                  Opdrachtgevers
                 </p>
               </div>
             </div>

@@ -129,4 +129,39 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    title: "Oostzijderpark",
+    homes: 53,
+    image: "/images/projects/oostzijderpark.webp",
+    href: "/projecten/oostzijderpark",
+  },
+  {
+    title: "Hof Driekamp",
+    homes: 40,
+    image: "/images/projects/hof-driekamp.webp",
+    href: "/projecten/hof-driekamp.webp",
+  },
+  {
+    title: "Thijmse Berg",
+    homes: 31,
+    image: "/images/projects/thijmse-berg.webp",
+    href: "/projecten/thijmse-berg",
+  },
+  {
+    title: "Spaarndammerstraat",
+    homes: 10,
+    image: "/images/projects/spaarndammerstraat.webp",
+    href: "/projecten/spaarndammerstraat",
+  },
+  {
+    title: "HAT",
+    homes: 72,
+    image: "/images/projects/hat.webp",
+    href: "/projecten/hat",
+  },
+  {
+    title: "Dura Vermeer Infra Utiliteit",
+    image: "/images/projects/dvic.webp",
+    href: "/projecten/dura-vermeer-infra-utiliteit",
+  },
 ];

@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     locale: "nl_NL",
     type: "website",
   },
+  verification: {
+    google: "Hs0qGhdu36_bT7qCrFB75NnYhPWvxPXfn5iCbKRLGHQ",
+  },
 };
 
 const inter = Inter({
