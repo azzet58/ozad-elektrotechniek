@@ -7,6 +7,8 @@ import Footer from "@/components/layout/Footer";
 import LenisScrollToTop from "@/utils/lenis-scroll-to-top";
 import { FadeIn } from "@/components/animations/fade-in";
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Özad Elektrotechniek | Elektro-installatiebedrijf Rotterdam",
@@ -58,6 +60,8 @@ export default function RootLayout({
     >
       <ReactLenis root>
         <LenisScrollToTop />
+        <Analytics />
+        <SpeedInsights />
         <body className={`flex min-h-screen flex-col font-sans antialiased`}>
           <header>
             <Navbar />
