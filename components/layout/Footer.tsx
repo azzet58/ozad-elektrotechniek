@@ -33,9 +33,9 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <div className="bg-neutral-900 pt-24 xl:pt-48">
+    <div className="bg-neutral-900 pt-24 2xl:pt-48">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
-        <div className="justify-between gap-12 space-y-12 text-sm font-medium lg:flex xl:text-base">
+        <div className="justify-between gap-12 space-y-12 text-sm font-medium lg:flex 2xl:text-base">
           <div className="space-y-8 text-neutral-300 lg:space-y-8">
             <ul className="text-white">
               <li>+31 6 26324551</li>
@@ -53,13 +53,13 @@ export default function Footer() {
               {socialLinks.map(({ icon: Icon, href }) => (
                 <li key={href}>
                   <Link href={href}>
-                    <Icon className="size-7 transition-colors hover:text-white xl:size-8" />
+                    <Icon className="size-7 transition-colors hover:text-white 2xl:size-8" />
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="grid grid-cols-2 gap-12 text-sm font-medium text-neutral-300 md:grid-cols-3 xl:text-base">
+          <div className="grid grid-cols-2 gap-12 text-sm font-medium text-neutral-300 md:grid-cols-3 2xl:text-base">
             <ul className="space-y-2">
               <p className="mb-4 font-bold text-white">Diensten</p>
               {servicesLinks.map((item) => (
@@ -101,7 +101,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-24 items-center justify-between space-y-8 text-white md:mt-24 md:mb-12 md:flex md:space-y-0 xl:mt-48">
+        <div className="mt-24 items-center justify-between space-y-8 text-white md:mt-24 md:mb-12 md:flex md:space-y-0 2xl:mt-48">
           <div>
             <Link href="/">
               <Image
@@ -110,7 +110,7 @@ export default function Footer() {
                 height={175}
                 alt="Özad Elektrotechniek Logo"
                 priority
-                className="w-24 xl:w-36"
+                className="w-24 2xl:w-36"
               />
             </Link>
           </div>
@@ -123,13 +123,13 @@ export default function Footer() {
                   height={100}
                   alt={item.alt}
                   priority
-                  className="w-16 xl:w-24"
+                  className="w-16 2xl:w-24"
                 />
               </li>
             ))}
           </ul>
         </div>
-        <div className="mt-8 items-center justify-between space-y-4 border-t border-neutral-800 py-10 text-xs text-neutral-400 md:flex md:space-y-0 xl:text-sm">
+        <div className="mt-8 items-center justify-between space-y-4 border-t border-neutral-800 py-10 text-xs text-neutral-400 md:flex md:space-y-0 2xl:text-sm">
           <p>©{new Date().getFullYear()} Özad Elektrotechniek B.V.</p>
           <ul className="flex gap-6">
             {legacyLinks.map((item) => (

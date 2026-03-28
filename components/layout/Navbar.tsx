@@ -79,12 +79,12 @@ export default function Navbar() {
                 priority
                 className={
                   isDark || mobileOpen
-                    ? "w-26 brightness-0 invert xl:w-36"
-                    : "w-26 xl:w-36"
+                    ? "w-26 brightness-0 invert 2xl:w-36"
+                    : "w-26 2xl:w-36"
                 }
               />
             </Link>
-            <ul className="flex hidden items-center gap-6 font-medium md:flex xl:gap-8 xl:text-xl">
+            <ul className="flex hidden items-center gap-6 font-medium md:flex 2xl:gap-8 2xl:text-xl">
               {navLinks.map((item) => {
                 const isActive =
                   pathname === item.href ||
@@ -94,7 +94,7 @@ export default function Navbar() {
                     {item.isButton ? (
                       <Button
                         asChild
-                        className="h-full cursor-pointer rounded-full bg-blue-600 text-xs font-bold hover:bg-blue-700 md:text-sm xl:text-lg"
+                        className="h-full cursor-pointer rounded-full bg-blue-600 text-xs font-bold hover:bg-blue-700 md:text-sm 2xl:text-lg"
                       >
                         <Link href={item.href}>{item.title}</Link>
                       </Button>

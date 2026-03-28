@@ -21,7 +21,7 @@ export default function PrivacyPolicy() {
     <div data-nav-theme="light" className="py-24 lg:py-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
-          <BreadcrumbList className="text-xs md:text-sm xl:text-base">
+          <BreadcrumbList className="text-xs md:text-sm 2xl:text-base">
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Home</BreadcrumbLink>
             </BreadcrumbItem>
@@ -32,11 +32,11 @@ export default function PrivacyPolicy() {
           </BreadcrumbList>
         </Breadcrumb>
         <FadeIn>
-          <h1 className="font-heading mb-12 text-4xl md:mb-24 md:text-5xl xl:mb-36 xl:text-7xl">
+          <h1 className="font-heading mb-12 text-4xl md:mb-24 md:text-5xl 2xl:mb-36 2xl:text-7xl">
             Privacyverklaring
           </h1>
-          <div className="mx-auto max-w-4xl space-y-12 font-medium text-neutral-500 md:px-12 xl:space-y-24 xl:px-0 xl:text-2xl">
-            <section className="space-y-4 xl:space-y-8">
+          <div className="mx-auto max-w-4xl space-y-12 font-medium text-neutral-500 md:px-12 2xl:space-y-24 2xl:px-0 2xl:text-2xl">
+            <section className="space-y-4 2xl:space-y-8">
               <p>
                 Özad Elektrotechniek B.V., gevestigd te Rotterdam, is
                 verantwoordelijk voor de verwerking van persoonsgegevens zoals
@@ -62,8 +62,8 @@ export default function PrivacyPolicy() {
                 </li>
               </ul>
             </section>
-            <section className="space-y-4 xl:space-y-8">
-              <h2 className="text-xl font-bold text-black md:text-2xl xl:text-4xl">
+            <section className="space-y-4 2xl:space-y-8">
+              <h2 className="text-xl font-bold text-black md:text-2xl 2xl:text-4xl">
                 Persoonsgegevens die wij verwerken
               </h2>
               <p>
@@ -83,8 +83,8 @@ export default function PrivacyPolicy() {
                 <li>Bankrekeningnummer</li>
               </ul>
             </section>
-            <section className="space-y-4 xl:space-y-8">
-              <h2 className="text-xl font-bold text-black md:text-2xl xl:text-4xl">
+            <section className="space-y-4 2xl:space-y-8">
+              <h2 className="text-xl font-bold text-black md:text-2xl 2xl:text-4xl">
                 Bijzondere en/of gevoelige persoonsgegevens die wij verwerken
               </h2>
               <p>
@@ -107,8 +107,8 @@ export default function PrivacyPolicy() {
                 , dan verwijderen wij deze informatie.
               </p>
             </section>
-            <section className="space-y-4 xl:space-y-8">
-              <h2 className="text-xl font-bold text-black md:text-2xl xl:text-4xl">
+            <section className="space-y-4 2xl:space-y-8">
+              <h2 className="text-xl font-bold text-black md:text-2xl 2xl:text-4xl">
                 Met welk doel en op basis van welke grondslag wij
                 persoonsgegevens verwerken
               </h2>
@@ -137,8 +137,8 @@ export default function PrivacyPolicy() {
                 hebben voor onze belastingaangifte.
               </p>
             </section>
-            <section className="space-y-4 xl:space-y-8">
-              <h2 className="text-xl font-bold text-black md:text-2xl xl:text-4xl">
+            <section className="space-y-4 2xl:space-y-8">
+              <h2 className="text-xl font-bold text-black md:text-2xl 2xl:text-4xl">
                 Geautomatiseerde besluitvorming
               </h2>
               <p>
@@ -146,8 +146,8 @@ export default function PrivacyPolicy() {
                 geautomatiseerde verwerkingen.
               </p>
             </section>
-            <section className="space-y-4 xl:space-y-8">
-              <h2 className="text-xl font-bold text-black md:text-2xl xl:text-4xl">
+            <section className="space-y-4 2xl:space-y-8">
+              <h2 className="text-xl font-bold text-black md:text-2xl 2xl:text-4xl">
                 Hoe lang we persoonsgegevens bewaren
               </h2>
               <p>
@@ -156,8 +156,8 @@ export default function PrivacyPolicy() {
                 uw gegevens worden verzameld.
               </p>
             </section>
-            <section className="space-y-4 xl:space-y-8">
-              <h2 className="text-xl font-bold text-black md:text-2xl xl:text-4xl">
+            <section className="space-y-4 2xl:space-y-8">
+              <h2 className="text-xl font-bold text-black md:text-2xl 2xl:text-4xl">
                 Delen van persoonsgegevens met derden
               </h2>
               <p>
@@ -171,8 +171,8 @@ export default function PrivacyPolicy() {
                 blijft verantwoordelijk voor deze verwerkingen.
               </p>
             </section>
-            <section className="space-y-4 xl:space-y-8">
-              <h2 className="text-xl font-bold text-black md:text-2xl xl:text-4xl">
+            <section className="space-y-4 2xl:space-y-8">
+              <h2 className="text-xl font-bold text-black md:text-2xl 2xl:text-4xl">
                 Cookies, of vergelijkbare technieken, die wij gebruiken
               </h2>
               <p>
@@ -180,8 +180,8 @@ export default function PrivacyPolicy() {
                 technieken.
               </p>
             </section>
-            <section className="space-y-4 xl:space-y-8">
-              <h2 className="text-xl font-bold text-black md:text-2xl xl:text-4xl">
+            <section className="space-y-4 2xl:space-y-8">
+              <h2 className="text-xl font-bold text-black md:text-2xl 2xl:text-4xl">
                 Gegevens inzien, aanpassen of verwijderen
               </h2>
               <p>
@@ -230,8 +230,8 @@ export default function PrivacyPolicy() {
                 </Link>
               </p>
             </section>
-            <section className="space-y-4 xl:space-y-8">
-              <h2 className="text-xl font-bold text-black md:text-2xl xl:text-4xl">
+            <section className="space-y-4 2xl:space-y-8">
+              <h2 className="text-xl font-bold text-black md:text-2xl 2xl:text-4xl">
                 Hoe wij persoonsgegevens beveiligen
               </h2>
               <p>

@@ -22,7 +22,7 @@ export default function About() {
     <div data-nav-theme="dark" className="bg-black py-24 lg:py-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
-          <BreadcrumbList className="text-xs md:text-sm xl:text-base">
+          <BreadcrumbList className="text-xs md:text-sm 2xl:text-base">
             <BreadcrumbItem>
               <BreadcrumbLink className="hover:text-white" href="/">
                 Home
@@ -35,14 +35,14 @@ export default function About() {
           </BreadcrumbList>
         </Breadcrumb>
         <FadeIn>
-          <h1 className="font-heading mb-12 text-4xl text-white md:mb-24 md:text-5xl xl:mb-36 xl:text-7xl">
+          <h1 className="font-heading mb-12 text-4xl text-white md:mb-24 md:text-5xl 2xl:mb-36 2xl:text-7xl">
             Maak kennis met Özad Elektrotechniek
           </h1>
         </FadeIn>
-        <div className="mx-auto mb-12 max-w-4xl space-y-12 font-medium text-neutral-500 md:mb-24 md:px-12 xl:mb-36 xl:space-y-24 xl:px-0 xl:text-2xl">
-          <section className="space-y-4 xl:space-y-8">
+        <div className="mx-auto mb-12 max-w-4xl space-y-12 font-medium text-neutral-500 md:mb-24 md:px-12 2xl:mb-36 2xl:space-y-24 2xl:px-0 2xl:text-2xl">
+          <section className="space-y-4 2xl:space-y-8">
             <FadeIn>
-              <h2 className="text-xl font-bold text-white md:text-2xl xl:text-4xl">
+              <h2 className="text-xl font-bold text-white md:text-2xl 2xl:text-4xl">
                 <TypingText text="Focus op hoogwaardige diensten" />
               </h2>
             </FadeIn>
@@ -61,9 +61,9 @@ export default function About() {
               </p>
             </FadeIn>
           </section>
-          <section className="space-y-4 xl:space-y-8">
+          <section className="space-y-4 2xl:space-y-8">
             <FadeIn delay={0.6}>
-              <h2 className="text-xl font-bold text-white md:text-2xl xl:text-4xl">
+              <h2 className="text-xl font-bold text-white md:text-2xl 2xl:text-4xl">
                 <TypingText delay={0.6} text="Ervaring die spreekt" />
               </h2>
             </FadeIn>
@@ -90,9 +90,9 @@ export default function About() {
           </section>
         </div>
         <FadeIn>
-          <div className="grid gap-4 md:grid-cols-2 xl:gap-12">
+          <div className="grid gap-4 md:grid-cols-2 lg:gap-8 2xl:gap-12">
             <div>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-md xl:aspect-[4/4]">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-md 2xl:aspect-[4/4]">
                 <ParallaxImage
                   src="/images/about/over-ozad-elektrotechniek-2.webp"
                   alt="Özad Elektrotechniek team aan het werk"
@@ -101,7 +101,7 @@ export default function About() {
               </div>
             </div>
             <div>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-md xl:aspect-[4/4]">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-md 2xl:aspect-[4/4]">
                 <ParallaxImage
                   src="/images/about/over-ozad-elektrotechniek-3.webp"
                   alt="Özad Elektrotechniek team aan het werk"

@@ -31,7 +31,7 @@ export default function Contact() {
     <div data-nav-theme="light" className="pt-24 lg:pt-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
-          <BreadcrumbList className="text-xs md:text-sm xl:text-base">
+          <BreadcrumbList className="text-xs md:text-sm 2xl:text-base">
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Home</BreadcrumbLink>
             </BreadcrumbItem>
@@ -42,11 +42,11 @@ export default function Contact() {
           </BreadcrumbList>
         </Breadcrumb>
         <FadeIn>
-          <h1 className="font-heading mb-12 text-4xl md:text-5xl xl:mb-24 xl:text-7xl">
+          <h1 className="font-heading mb-12 text-4xl md:text-5xl 2xl:mb-24 2xl:text-7xl">
             Neem contact op
           </h1>
           <div className="mb-12 max-w-3xl lg:mb-24">
-            <p className="font-medium text-neutral-500 xl:text-2xl">
+            <p className="font-medium text-neutral-500 2xl:text-2xl">
               Heeft u vragen of wilt u meer informatie? Neem dan gerust contact
               met ons op via het contactformulier hieronder of via WhatsApp.
             </p>
@@ -64,47 +64,47 @@ export default function Contact() {
               <FieldGroup>
                 <div className="grid grid-cols-2 gap-6">
                   <Field>
-                    <FieldLabel htmlFor="name" className="xl:text-xl">
+                    <FieldLabel htmlFor="name" className="2xl:text-xl">
                       Naam
                     </FieldLabel>
                     <Input
                       id="name"
                       name="name"
                       type="text"
-                      className="h-12 md:!text-base xl:h-16 xl:!text-xl"
+                      className="h-12 md:!text-base 2xl:h-16 2xl:!text-xl"
                     />
                   </Field>
                   <Field>
-                    <FieldLabel htmlFor="phone" className="xl:text-xl">
+                    <FieldLabel htmlFor="phone" className="2xl:text-xl">
                       Telefoonnummer
                     </FieldLabel>
                     <Input
                       id="phone"
                       name="phone"
                       type="tel"
-                      className="h-12 md:!text-base xl:h-16 xl:!text-xl"
+                      className="h-12 md:!text-base 2xl:h-16 2xl:!text-xl"
                     />
                   </Field>
                 </div>
                 <Field>
-                  <FieldLabel htmlFor="email" className="xl:text-xl">
+                  <FieldLabel htmlFor="email" className="2xl:text-xl">
                     E-mailadres
                   </FieldLabel>
                   <Input
                     id="email"
                     name="email"
                     type="email"
-                    className="h-12 md:!text-base xl:h-16 xl:!text-xl"
+                    className="h-12 md:!text-base 2xl:h-16 2xl:!text-xl"
                   />
                 </Field>
                 <Field>
-                  <FieldLabel htmlFor="message" className="xl:text-xl">
+                  <FieldLabel htmlFor="message" className="2xl:text-xl">
                     Bericht
                   </FieldLabel>
                   <Textarea
                     id="message"
                     name="message"
-                    className="h-36 md:!text-base xl:h-64 xl:!text-xl"
+                    className="h-36 md:!text-base 2xl:h-64 2xl:!text-xl"
                   />
                 </Field>
 
@@ -121,7 +121,7 @@ export default function Contact() {
                 <Button
                   type="submit"
                   disabled={isPending}
-                  className="cursor-pointer self-start rounded-full bg-blue-600 p-4 text-xs font-bold hover:bg-blue-700 disabled:opacity-50 md:text-sm xl:p-6 xl:text-lg"
+                  className="cursor-pointer self-start rounded-full bg-blue-600 p-4 text-xs font-bold hover:bg-blue-700 disabled:opacity-50 md:text-sm 2xl:p-6 2xl:text-lg"
                 >
                   {isPending ? "Versturen..." : "Versturen"}
                 </Button>
@@ -137,7 +137,7 @@ export default function Contact() {
             allowFullScreen
             height="800"
             loading="lazy"
-            className="h-[50vh] w-full xl:h-[100vh]"
+            className="h-[50vh] w-full lg:h-[100vh]"
             title="Locatie Özad Elektrotechniek Rotterdam"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>

@@ -18,7 +18,7 @@ export default function NotFound() {
     <div data-nav-theme="light" className="py-24 lg:py-36">
       <div className="mx-auto max-w-[1700px] px-4 md:px-8">
         <Breadcrumb className="mb-4 lg:mb-6">
-          <BreadcrumbList className="text-xs md:text-sm xl:text-base">
+          <BreadcrumbList className="text-xs md:text-sm 2xl:text-base">
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Home</BreadcrumbLink>
             </BreadcrumbItem>
@@ -29,10 +29,10 @@ export default function NotFound() {
           </BreadcrumbList>
         </Breadcrumb>
         <FadeIn>
-          <h1 className="font-heading mb-12 text-4xl md:mb-24 md:text-5xl xl:mb-36 xl:text-7xl">
+          <h1 className="font-heading mb-12 text-4xl md:mb-24 md:text-5xl 2xl:mb-36 2xl:text-7xl">
             Pagina niet gevonden
           </h1>
-          <div className="mx-auto max-w-4xl space-y-4 font-medium text-neutral-500 md:px-12 xl:space-y-8 xl:px-0 xl:text-2xl">
+          <div className="mx-auto max-w-4xl space-y-4 font-medium text-neutral-500 md:px-12 2xl:space-y-8 2xl:px-0 2xl:text-2xl">
             <p>
               Helaas, de pagina die u zocht is niet gevonden of beschikbaar.
             </p>
