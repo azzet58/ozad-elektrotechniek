@@ -1,8 +1,8 @@
 ![Özad Elektrotechniek](./demo.png)
 
-# Özad Elektrotechniek B.V.
+# Özad Elektrotechniek
 
-Modern website redesign for Özad Elektrotechniek B.V. — an electrician company based in Rotterdam.
+Production client site for Özad Elektrotechniek — an electrician company based in Rotterdam.
 
 ## Live Site
 
