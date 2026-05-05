@@ -2,7 +2,7 @@
 
 # Özad Elektrotechniek
 
-Production client site for Özad Elektrotechniek — an electrician company based in Rotterdam.
+Production client site for Özad Elektrotechniek - an electrician company.
 
 ## Live Site
 
