@@ -164,4 +164,5 @@ export const projects: Project[] = [
     image: "/images/projects/dvic.webp",
     href: "/projecten/dura-vermeer-infra-utiliteit",
   },
+  
 ];

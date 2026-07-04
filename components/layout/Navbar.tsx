@@ -124,7 +124,7 @@ export default function Navbar() {
                   : "text-black md:hidden"
               }
               onClick={() => setMobileOpen((prev) => !prev)}
-              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-label={mobileOpen ? "Sluit menu" : "Open menu"}
               aria-expanded={mobileOpen}
             >
               {mobileOpen ? (
