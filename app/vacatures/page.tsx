@@ -46,7 +46,7 @@ export default function Services() {
               <div className="flex justify-center gap-2 lg:gap-4">
                 <Button className="cursor-pointer self-start rounded-full bg-blue-600 p-5 font-bold hover:bg-blue-700 md:text-sm lg:p-6 2xl:p-7 2xl:text-lg">
                   <Link
-                    href="https://api.whatsapp.com/send?phone=31686297002"
+                    href="https://api.whatsapp.com/send?phone=31103220583"
                     className="flex items-center gap-2"
                   >
                     <FaWhatsapp className="size-4 lg:size-6 2xl:size-7" />

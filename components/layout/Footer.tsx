@@ -27,7 +27,7 @@ const socialLinks = [
     icon: FaLinkedin,
     href: "https://linkedin.com/in/abdullah-aydemir-00a13a205/",
   },
-  { icon: FaWhatsapp, href: "https://api.whatsapp.com/send?phone=31686297002" },
+  { icon: FaWhatsapp, href: "https://api.whatsapp.com/send?phone=31103220583" },
   { icon: FaInstagram, href: "https://instagram.com/ozadelektro" },
 ];
 
