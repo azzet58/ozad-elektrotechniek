@@ -54,7 +54,7 @@ export default function Services() {
                 </Button>
                 <Button className="cursor-pointer self-start rounded-full bg-blue-600 p-5 font-bold hover:bg-blue-700 md:text-sm lg:p-6 2xl:p-7 2xl:text-lg">
                   <Link
-                    href="tel:31626324551"
+                    href="tel:+31103220583"
                     className="flex items-center gap-2"
                   >
                     <FaPhoneAlt className="size-3 lg:size-4 2xl:size-5" />

@@ -55,9 +55,9 @@ export default function PrivacyPolicy() {
                 <li>
                   <Link
                     className="text-blue-600 transition-colors hover:text-black"
-                    href="tel:31626324551"
+                    href="tel:+31103220583"
                   >
-                    +31 6 26324551
+                    +31 10 3220583
                   </Link>
                 </li>
               </ul>

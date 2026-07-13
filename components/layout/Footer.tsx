@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="justify-between gap-12 space-y-12 text-sm font-medium lg:flex 2xl:text-base">
           <div className="space-y-8 text-neutral-300 lg:space-y-8">
             <ul className="text-white">
-              <li>+31 6 26324551</li>
+              <li>+31 10 3220583</li>
               <li>info@ozadelektrotechniek.nl</li>
             </ul>
             <ul>
