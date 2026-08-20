@@ -29,7 +29,7 @@ export default function About() {
             <div className="flex place-content-between md:place-content-start md:space-x-24 lg:place-content-between">
               <div className="md:space-y-1 2xl:space-y-2">
                 <h3 className="font-heading text-3xl md:w-12 md:text-4xl 2xl:w-36 2xl:text-6xl">
-                  <Counter to={1000} suffix="+" />
+                  <Counter to={2000} suffix="+" />
                 </h3>
                 <p className="text-xs font-medium md:text-sm 2xl:text-xl">
                   Woningen
@@ -37,10 +37,10 @@ export default function About() {
               </div>
               <div className="md:space-y-1 2xl:space-y-2">
                 <h3 className="font-heading text-3xl md:w-12 md:text-4xl 2xl:w-36 2xl:text-6xl">
-                  <Counter to={20} suffix="+" />
+                  <Counter to={30} suffix="+" />
                 </h3>
                 <p className="text-xs font-medium md:text-sm 2xl:text-xl">
-                  Jaar
+                  Medewerkers
                 </p>
               </div>
               <div className="md:space-y-1 2xl:space-y-2">
