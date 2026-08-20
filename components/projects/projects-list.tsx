@@ -80,18 +80,40 @@ export default function ProjectsList() {
                       <h2 className="text-xl font-medium text-white transition-colors duration-400 group-hover:text-blue-600 md:text-2xl lg:text-3xl 2xl:text-5xl">
                         {project.title}
                       </h2>
-                      <ul className="flex items-center gap-2 md:gap-3 2xl:items-end 2xl:gap-4">
+                      <ul className="flex flex-wrap items-center gap-x-2 gap-y-0 md:gap-3 2xl:items-end 2xl:gap-4">
                         {project.location && (
-                          <li className="text-neutral-400 md:text-lg lg:text-2xl 2xl:text-4xl">
+                          <li className="whitespace-nowrap text-neutral-400 md:text-lg lg:text-2xl 2xl:text-4xl">
                             {project.location}
                           </li>
                         )}
                         {project.homes && (
-                          <li className="text-sm text-neutral-400 md:text-base lg:text-xl 2xl:text-3xl">
+                          <li className="text-sm whitespace-nowrap text-neutral-400 md:text-base lg:text-xl 2xl:text-3xl">
                             <span className="font-bold">{project.homes}</span>{" "}
                             <span className="font-semibold">Woningen</span>
                           </li>
                         )}
+                        {project.appartments && (
+                          <li className="text-sm whitespace-nowrap text-neutral-400 md:text-base lg:text-xl 2xl:text-3xl">
+                            <span className="font-bold">
+                              {project.appartments}
+                            </span>{" "}
+                            <span className="font-semibold">Appartementen</span>
+                          </li>
+                        )}
+                        {project.stats &&
+                          project.stats.map((stat, index) => (
+                            <li
+                              key={index}
+                              className="text-sm whitespace-nowrap text-neutral-400 md:text-base lg:text-xl 2xl:text-3xl"
+                            >
+                              {stat.value && (
+                                <span className="font-bold">{stat.value} </span>
+                              )}{" "}
+                              <span className="font-semibold">
+                                {stat.label}
+                              </span>
+                            </li>
+                          ))}
                       </ul>
                     </div>
                   </div>

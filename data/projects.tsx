@@ -5,6 +5,11 @@ type Project = {
   contractor?: string;
   client?: string;
   homes?: number;
+  appartments?: number;
+  stats?: {
+    value?: string;
+    label?: string;
+  }[];
   location?: string;
   term?: string;
   image: string;
@@ -67,6 +72,47 @@ export const projects: Project[] = [
           "Bij de ontwikkeling van de nieuwe huurappartementen ligt de focus op duurzaamheid en energie-efficiëntie. De nieuwe woningen worden uitgerust met moderne installaties zoals zonnepanelen, energiezuinige verwarmingssystemen en hoogwaardige isolatie. Hiermee wordt niet alleen voldaan aan de huidige milieueisen, maar dragen de appartementen ook bij aan een lagere energierekening voor bewoners en een kleinere ecologische voetafdruk. Dit sluit aan bij Portaal’s ambitie om toekomstbestendige en duurzame woonoplossingen te creëren.",
       },
     ],
+  },
+  {
+    title: "Steegsche Velden",
+    homes: 42,
+    image: "/images/projects/steegsche-velden.webp",
+    href: "/projecten/steegsche-velden",
+  },
+  {
+    title: "Weegschaal Bilthoven",
+    appartments: 36,
+    image: "/images/projects/weegschaal-bilthoven.webp",
+    href: "/projecten/weegschaal-bilthoven",
+  },
+  {
+    title: "Ivoordreef",
+    homes: 74,
+    appartments: 233,
+    image: "/images/projects/ivoordreef.webp",
+    href: "/projecten/ivoordreef",
+  },
+  {
+    title: "Pettemer Duynen",
+    homes: 150,
+    stats: [{ label: "Linnengebouw" }],
+    image: "/images/projects/pettemer-duynen.webp",
+    href: "/projecten/pettemer-duynen",
+  },
+  {
+    title: "ODUM Merwede",
+    stats: [
+      { value: "779", label: "Appartementen" },
+      { value: "147", label: "Appartementen (E&W)" },
+    ],
+    image: "/images/projects/odum-merwede.webp",
+    href: "/projecten/odum-merwede",
+  },
+  {
+    title: "Lorentzhof",
+    stats: [{ value: "60", label: "Appartementen (alleen ruwbouw)" }],
+    image: "/images/projects/lorentzhof.webp",
+    href: "/projecten/lorentzhof",
   },
   {
     title: "Nieuw Kralingen",
@@ -139,7 +185,7 @@ export const projects: Project[] = [
     title: "Hof Driekamp",
     homes: 40,
     image: "/images/projects/hof-driekamp.webp",
-    href: "/projecten/hof-driekamp.webp",
+    href: "/projecten/hof-driekamp",
   },
   {
     title: "Thijmse Berg",
@@ -164,5 +210,4 @@ export const projects: Project[] = [
     image: "/images/projects/dvic.webp",
     href: "/projecten/dura-vermeer-infra-utiliteit",
   },
-  
 ];

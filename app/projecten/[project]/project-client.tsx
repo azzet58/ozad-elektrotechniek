@@ -81,6 +81,19 @@ export default function ProjectClient({ project }: { project: Project }) {
                     <p className="text-white">{project.homes}</p>
                   </div>
                 )}
+                {project.appartments && (
+                  <div>
+                    <p className="text-neutral-300">Appartementen</p>
+                    <p className="text-white">{project.appartments}</p>
+                  </div>
+                )}
+                {project.stats &&
+                  project.stats.map((s, i) => (
+                    <div key={i}>
+                      <p className="text-neutral-300">{s.label}</p>
+                      {s.value && <p className="text-white">{s.value}</p>}
+                    </div>
+                  ))}
               </div>
               <div className="space-y-12">
                 {project.term && (
