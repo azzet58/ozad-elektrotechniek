@@ -47,10 +47,10 @@ export default function Projects() {
   };
 
   return (
-    <section className="bg-neutral-50 py-12 lg:py-24 2xl:py-36">
-      <div className="mx-auto max-w-[1700px] px-4 md:px-8">
+    <section className="bg-neutral-50 pt-0 pb-12 lg:pt-0 lg:pb-24 2xl:pt-0 2xl:pb-36">
+      <div className="mx-auto max-w-[2200px] px-4 md:px-8">
         <div className="mb-8 items-center justify-between space-y-4 md:flex lg:mb-12">
-          <h2 className="text-2xl font-bold md:text-3xl 2xl:text-5xl">
+          <h2 className="text-xl font-bold md:text-2xl 2xl:text-4xl">
             Projecten
           </h2>
           <Link
@@ -64,7 +64,7 @@ export default function Projects() {
       <div ref={containerRef} className="overflow-hidden">
         <motion.div
           style={{ x }}
-          className="flex flex-col gap-4 pr-4 pl-4 will-change-transform md:pr-8 md:pl-8 lg:flex-row lg:pl-64"
+          className="flex flex-col gap-4 bg-neutral-50 pr-4 pl-4 will-change-transform md:pr-8 md:pl-8 lg:flex-row lg:pl-64"
         >
           {projects
             .slice(0, mounted && isDesktop ? projects.length : 3)

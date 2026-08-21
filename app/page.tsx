@@ -1,5 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import FeaturedProject from '@/components/sections/FeaturedProject'
 import Projects from "@/components/sections/Projects";
 import Services from "@/components/sections/Careers";
 import { FadeIn } from "@/components/animations/fade-in";
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <About />
       <FadeIn>
+        <FeaturedProject />
         <Projects />
       </FadeIn>
       <Services />

@@ -12,6 +12,7 @@ type Project = {
   }[];
   location?: string;
   term?: string;
+  featured?: boolean;
   image: string;
   href: string;
   sections?: {
@@ -107,6 +108,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/odum-merwede.webp",
     href: "/projecten/odum-merwede",
+    featured: true
   },
   {
     title: "Lorentzhof",
